@@ -5,14 +5,14 @@ const mostRecentScore = localStorage.getItem('mostRecentScore');
 
 //print and convert array object out of local storage
 const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
-const MAX_High_SCORES =  5;
+const MAX_HIGH_SCORES =  5;
+console.log(highScores);
 
 finalScore.innerText = mostRecentScore;
 
 username.addEventListener('keyup', () => {
-    console.log(username.value);
     saveScoreBtn.disabled = !username.value;
-})
+});
 
 saveHighScore = e => {
     console.log("clicked the save button");
@@ -33,6 +33,6 @@ const score = {
     //update local storage with high scores and stringify
     localStorage.setItem('highScores', JSON.stringify(highScores));
     //go back home
-    window.location.assign('quiz.html');
-    
+    window.location.assign('index.html');
+    console.log(highScores);
 };
