@@ -80,11 +80,13 @@ function startTimer() {
     timer = setInterval(function() {
       timerCount--;
       timerElement.textContent = timerCount;
+    
       //alert when timer reaches 0
       if (timerCount === 0) {
         alert("Must be a muggle.");
         return window.location.assign(`end.html`);
       }
+ 
     }, 1000);
 }
     getNewQuestion = () => {
