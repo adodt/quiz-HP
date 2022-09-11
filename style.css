@@ -13,7 +13,7 @@
 
 *{
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+     font-family: 'Hind', sans-serif;
     margin: 0;
     padding: 0;
     color: #333;
@@ -99,6 +99,7 @@ justify-content: center;
     text-decoration: none;
     color: var(--deep-space);
     background-color: white;
+    font-family: 'Hind', sans-serif;
 }
 
 .btn:hover {
