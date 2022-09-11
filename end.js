@@ -33,6 +33,6 @@ const score = {
     //update local storage with high scores and stringify
     localStorage.setItem('highScores', JSON.stringify(highScores));
     //go back home
-    window.location.assign('index.html');
+    window.location.assign('highscores.html');
     console.log(highScores);
 };

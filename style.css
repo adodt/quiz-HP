@@ -4,10 +4,7 @@
     background-color: var(--deep-space);
     font-size: 62.5%;
     --deep-space: #395E66;
-    --myrtle-green: #387D7A;
-    --illuminating-emerald: #32936F;
-    --jade: #26A96C;
-    --bitter-lime: #C2F136;
+  
 
 }
 
@@ -27,32 +24,34 @@ margin-bottom: 5rem;
 }
 
 h1 {
-    font-size: 4.4rem;
+    font-size: 4.8rem;
     color: whitesmoke;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
     font-family: 'Cinzel', serif;
 
 }
 
 h1 > span {
-    font-size:2.4rem;
-    font-weight: 500;
+    font-size:1.4rem;
 }
 
 h2 {
-    font-size: 4.2rem;
-    margin-bottom: 4rem;
-    font-weight: 700;
+    font-size: 3.5rem;
+    margin-bottom: 0 rem;
+    font-weight: 300;
+    font-family: 'Cinzel', serif;
+    color: whitesmoke;
 }
 
 h3 {
     font-size: 2.8rem;
     font-weight: 500;
+    color: whitesmoke;
 }
 
 /* Utilities */
 .container {
-    width: 100vw;
+    width: 50vw;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -60,10 +59,6 @@ h3 {
     max-width: 80rem;
     margin: 0 auto;
     padding: 2rem;
-}
-
-.container > * {
-    width: 100%;
 }
 
 .flex-column {
@@ -88,9 +83,27 @@ justify-content: center;
     display: none;
 }
 
+.timer-count {
+    color: whitesmoke;
+    font-family: 'Cinzel', serif;
+}
+
+.seconds-remaining {
+    font-size: 2rem;
+}
+
+.card-timer {
+    margin-top: 15px;
+}
+
 /* Buttons */
+
+#saveScoreBtn, #playAgainBtn, #goHomeBtn, #highScoresBtn {
+    font-size: 2.4rem;
+}
+
 .btn {
-    font-size: 1.8rem;
+    font-size: 4rem;
     padding: 1rem 0;
     width: 20rem;
     text-align: center;
