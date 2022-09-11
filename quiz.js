@@ -80,6 +80,7 @@ function startTimer() {
     timer = setInterval(function() {
       timerCount--;
       timerElement.textContent = timerCount;
+      //alert when timer reaches 0
       if (timerCount === 0) {
         alert("Must be a muggle.");
         return window.location.assign(`end.html`);
@@ -87,8 +88,8 @@ function startTimer() {
     }, 1000);
 }
     getNewQuestion = () => {
-        //if no more questions, go to end page
-        if(availableQuestions.lenth === 0 || questionCounter >= MAX_QUESTIONS){
+        //if no more questions, go to end page and set score
+        if(availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS){
         localStorage.setItem('mostRecentScore', score);
         //locate end page
         return window.location.assign('end.html');
@@ -99,7 +100,7 @@ function startTimer() {
         progressText.innerText = `Question ${questionCounter}/${MAX_QUESTIONS}`;
         progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`;
     
-            //pick random question from array of questions
+        //pick random question from array of questions
         const questionIndex = Math.floor(Math.random() * availableQuestions.length);
             currentQuestion = availableQuestions[questionIndex];
             question.innerText = currentQuestion.question;
@@ -110,7 +111,7 @@ function startTimer() {
                 choice.innerText = currentQuestion['choice' + number];
             })
     
-                //removes question from array
+            //removes question from array
             availableQuestions.splice(questionIndex, 1);
             acceptedAnswers = true;
   }

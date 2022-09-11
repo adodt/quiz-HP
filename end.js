@@ -20,7 +20,7 @@ saveHighScore = e => {
 
 const score = {
     //retains high scores
-    score: Math.floor(Math.random() * 100),
+    score: mostRecentScore,
     name: username.value
 };
     //add score to array
