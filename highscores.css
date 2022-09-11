@@ -1,0 +1,15 @@
+#highScoresList {
+    list-style: decimal;
+    font-size: 2.4rem;
+    justify-content: center;
+    align-items: center;
+    max-width: 80rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+
+.high-score {
+    color: whitesmoke;
+    padding: 1rem;
+}
+
