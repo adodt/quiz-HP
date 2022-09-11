@@ -8,9 +8,7 @@
     padding: 0.5rem;
 }
 
-#finalScore{
-    font-family:'Cinzel', serif;
-}
+
 
 .high-score {
     color: whitesmoke;
@@ -18,6 +16,7 @@
     font-family: 'Hind', sans-serif;
     justify-content: center;
     margin-bottom: .5rem;
+    border-radius: 10px;
 
 }
 
