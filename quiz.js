@@ -133,6 +133,8 @@ choices.forEach(choice => {
 
         if (classToApply === 'correct' ) {
             incrementScore(CORRECT_BONUS);
+        } else {
+            timerCount -= 3
         }
 
         selectedChoice.parentElement.classList.add(classToApply);
